@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { Box, Typography, Stack, Button } from "@mui/material";
-import HeroBannerImage from "../assets/images/banner.png";
+import HeroBannerImage from "../assets/images/banner6.jpg";
 export default function HeroBanner() {
 	return (
 		<Box
