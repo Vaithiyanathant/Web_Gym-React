@@ -9,15 +9,20 @@ import {
 	Typography,
 	typography,
 } from "@mui/material";
+import { exerciseOptions, fetchData } from "../utils/fetchData";
+
 export default function SearchExercises() {
 	const [search, setsearch] = useState("");
 
-    const handleSearch = async ()=>{
-        if(search){
-           // const exercisesDate =await fetchData();
-        }
-
-    }
+	const handleSearch = async () => {
+		if (search) {
+			const exercisesDate = await fetchData(
+				'https://exercisedb.p.rapidapi.com/exercises',
+				exerciseOptions
+			);
+			console.log(exercisesDate);
+		}
+	};
 
 	return (
 		<Stack
