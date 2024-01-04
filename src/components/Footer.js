@@ -26,7 +26,7 @@ const Footer = () => (
 			mt='41px'
 			textAlign='center'
 			pb='40px'>
-			Made with ❤️ by JavaScript Mastery
+			Made with ❤️ by vaithiyanathan
 		</Typography>
 	</Box>
 );
